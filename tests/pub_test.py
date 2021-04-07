@@ -20,4 +20,5 @@ class TestPub(unittest.TestCase):
         self.assertEqual(False, self.pub.check_age(self.customer_2))
 
     def test_is_customer_too_drunk(self):
-        self.assertEqual
+        self.assertEqual(True, self.pub.is_customer_too_drunk(self.customer_3))
+        self.assertEqual(False, self.pub.is_customer_too_drunk(self.customer_1))

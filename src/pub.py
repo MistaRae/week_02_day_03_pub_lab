@@ -14,7 +14,9 @@ class Pub:
         return False
         
     def is_customer_too_drunk(self, customer):
-        pass
+        if customer.drunkenness > 15:
+            return True
+        return False
 
     def find_stock_by_name(self, item):
         pass
