@@ -1,10 +1,10 @@
 import unittest 
 from src.drink import Drink
 
-class TestPub(unittest.TestCase):
+class TestDrink(unittest.TestCase):
     
     def setUp(self):
-        self.pub = Pub("The Prancing Pony", 100.00)
+        self.drink_1 = Drink("Whisky", 5.00, 5)
 
-    def test_pub_has_name(self):
-        self.assertEqual("The Prancing Pony", self.pub.name)
+    def test_drink_has_name(self):
+        self.assertEqual("Whisky", self.drink_1.name)
