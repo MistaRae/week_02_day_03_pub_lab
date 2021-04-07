@@ -1,5 +1,5 @@
 import unittest
-# from tests. import *
+from tests.pub_tests import TestPub
 
 if __name__ == "__main__":
     unittest.main()
