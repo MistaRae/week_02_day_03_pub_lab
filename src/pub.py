@@ -1,6 +1,7 @@
 from src.food import Food
 from src.drink import Drink
 from src.customer import Customer
+import pdb
 
 class Pub:
     def __init__(self, name, till):
@@ -19,18 +20,28 @@ class Pub:
         return False
 
     def find_stock_by_name(self, item):
-        pass
+        # pdb.set_trace()
+        for stock_item in self.stock:
+            if stock_item.name == item and stock_item.quantity > 0:
+                return True
+        return False
 
-    def customer_can_afford(self, customer):
-        pass
+
+    def customer_can_afford(self, customer, item):
+        if customer.wallet >= item.price:
+            return True
+        return False
 
     def remove_funds_from_wallet(self, customer):
+        #customer wallet - item price
         pass
 
     def add_funds_to_till(self, item):
+        #pub.till + item price 
         pass
 
     def remove_item_from_stock(self):
+        #
         pass
 
     def add_drunkenness (self, customer):
