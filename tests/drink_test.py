@@ -1,5 +1,5 @@
 import unittest 
-from src.pub import Pub
+from src.drink import Drink
 
 class TestPub(unittest.TestCase):
     
